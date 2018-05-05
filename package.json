@@ -1,0 +1,22 @@
+{
+  "name": "vacation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikhaild908/vacation.git"
+  },
+  "keywords": [
+    "vacation"
+  ],
+  "author": "Mike D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikhaild908/vacation/issues"
+  },
+  "homepage": "https://github.com/mikhaild908/vacation#readme"
+}
