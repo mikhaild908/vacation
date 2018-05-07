@@ -11,9 +11,13 @@ app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.static('src/views'));
 
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res){
     //res.send('Hello World');
-    res.sendFile(path.join(__dirname, 'views/index.html'));
+    //res.sendFile(path.join(__dirname, 'views/index.html'));
+    res.render('index', { list: ['a', 'b'], title: 'My Title' });
 });
 
 app.get('/books', function(req, res){
