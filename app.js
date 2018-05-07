@@ -1,12 +1,11 @@
-var express = require('express');
-var chalk = require('chalk');
-var debug = require('debug')('app'); // to use this - on the command line: DEBUG=app node app.js
-var morgan = require('morgan');
-var path = require('path');
+const express = require('express');
+const chalk = require('chalk');
+const debug = require('debug')('app'); // to use this - on the command line: DEBUG=app node app.js
+const morgan = require('morgan');
+const path = require('path');
 
-var app = express();
-
-var port = 3000;
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(morgan('tiny')); 
 app.use(express.static(path.join(__dirname, '/public')));
