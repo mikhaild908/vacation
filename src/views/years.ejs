@@ -13,7 +13,7 @@
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#"><%=title%></a>
+              <a class="navbar-brand" href="/"><%=title%></a>
             </div>
             <ul class="nav navbar-nav" role="navigation">
               <%for(let i=0; i<nav.length; i++){%>
@@ -25,9 +25,9 @@
       </div>
 
       <div class="container">
-        <h2>Years</h2>
+        <h3>Years</h3>
         <ul class="list-group">
-            <%for(let i=0; i<nav.length; i++){%>
+            <%for(let i=0; i < nav.length; i++){%>
                 <li class="list-group-item"><%= nav[i].title;%> <span class="badge"><%=i%></span></li>
             <%}%>
         </ul>
