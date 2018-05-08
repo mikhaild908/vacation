@@ -6,8 +6,10 @@ const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
-const nav = [ { link: '/years/2017', title: '2017' },
-              { link: '/years/2018', title: '2018'} ];
+const nav = [ { link: '/years/2018', title: '2018' },
+              { link: '/years/2017', title: '2017' },
+              { link: '/years/2016', title: '2016' },
+              { link: '/years/2015', title: '2015' } ];
 
 app.use(morgan('tiny')); 
 app.use(express.static(path.join(__dirname, '/public')));
