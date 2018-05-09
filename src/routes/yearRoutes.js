@@ -1,4 +1,6 @@
 const express = require('express');
+const path = require('path');
+const fs = require('fs');
 
 function router(nav) {
     const yearRouter = express.Router();
@@ -12,7 +14,10 @@ function router(nav) {
     yearRouter.route('/:id')
         .get((req, res) => {
             var id = req.params.id;
-            res.render('year', { nav, title, id });
+            var directoryPath = path.join(__dirname, '//..//..//', 'public/images', id);
+            var images = fs.readdirSync(directoryPath);
+
+            res.render('year', { nav, title, id, images });
         });
 
     return yearRouter;
