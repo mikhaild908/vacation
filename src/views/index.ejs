@@ -9,7 +9,7 @@
       <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-      <!--<link href="css/styles.css" rel="stylesheet">-->
+      <link href="/css/puzzle.css" rel="stylesheet">
     </head>
     <body>
       <div class="container-fluid">
@@ -28,11 +28,29 @@
       </div>
 
       <div class="container">
-        <h3>Vacation Photos</h3>
-        <p>Here are some vacation photos</p>
+        <h3>Castaway Cay Puzzle</h3>
+        
+        <div class="canvas">
+          <div class="board">
+              <div id="box1" class="square" draggable="false">1</div>
+              <div id="box2" class="square" draggable="false">2</div>
+              <div id="box3" class="square" draggable="false">3</div>
+              <div id="box4" class="square" draggable="false">4</div>
+              <div id="box5" class="square" draggable="false">5</div>
+              <div id="box6" class="square" draggable="false">6</div>
+              <div id="box7" class="square" draggable="false">7</div>
+              <div id="box8" class="square" draggable="false">8</div>
+              <div id="box9" class="square" draggable="false">9</div>
+          </div>
+          
+          <input id="newGameButton" type="button" class="btn btn-primary" value="New Game">
+          
+          <h4><span id="messages" class="label label-success"></span></h4>
+        </div>
       </div>
       
       <!-- script references -->
+      <script src="/js/puzzle.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		  <!--<script src="js/jquery.slim.min.js"></script>-->
